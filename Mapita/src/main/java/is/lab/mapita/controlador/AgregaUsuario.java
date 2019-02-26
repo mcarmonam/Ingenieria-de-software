@@ -18,8 +18,8 @@ import javax.faces.bean.ManagedBean;
 public class AgregaUsuario {
     private String nombre;
     private String correo;
-    private String contraseña;
-    private Date fecha;
+    private String contrasenia;
+    private Date fechanacimiento;
 
     public String getNombre() {
         return nombre;
@@ -37,28 +37,28 @@ public class AgregaUsuario {
         this.correo = correo;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasenia() {
+        return contrasenia;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
     }
 
-    public Date getFecha() {
-        return fecha;
+    public Date getFechanacimiento() {
+        return fechanacimiento;
     }
 
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
+    public void setFechanacimiento(Date fechanacimiento) {
+        this.fechanacimiento = fechanacimiento;
     }
     
     public void agregaUsuario(){
         Usuario u = new Usuario();
         u.setNombre(nombre);
         u.setCorreo(correo);
-        u.setContraseña(contraseña);
-        u.setFecha(fecha);
+        u.setContrasenia(contrasenia);
+        u.setFechanacimiento(fechanacimiento);
         UsuarioDAO udb = new UsuarioDAO();
         udb.save(u);
         
