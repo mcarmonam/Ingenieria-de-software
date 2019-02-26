@@ -3,7 +3,7 @@ CREATE TABLE usuario (
   nombre text NOT NULL,
   correo  text NOT NULL,
   contrasenia text NOT NULL,
-  fechanacimiento date,
+  fecha date,
   PRIMARY KEY (idusuario)
 );
 

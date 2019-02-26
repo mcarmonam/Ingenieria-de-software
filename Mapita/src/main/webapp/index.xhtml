@@ -4,54 +4,68 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui">
-    <f:view>
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+    
         <h:head>
             <title>Inicio</title>
             <h:outputStylesheet name="css/estilos.css"/>
+            
         </h:head>
-        <h:body>
-            <header>
-                <h1>Mapita</h1>
-                <h:form id="busqueda">
-                    <p:inputText type="search " value="#{buscaPorNombre.nombre}"/>
-                    <p:commandButton action="#{buscaPorNombre.buscaPorNombre()}" value="BuscaPorNombre"/>
-                </h:form>
-            </header>
-            <main>
-                <section>
-                    <div id="colores">
-                        <div id="rojo" class="color"></div>
-                        <div id="naranja" class="color"></div>
-                        <div id="amarillo" class="color"></div>
-                        <div id="verde" class="color"></div>
-                        <div id="azul" class="color"></div>
-                        <div id="anil" class="color"></div>
-                        <div id="violeta" class="color"></div>
-                        
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css"></link>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <div class="head">
+                <div class="navbar">
+                    <div class="navbar">
+                        <div class="container ">
+                            <ul class="nav">
+                                <li>
+                                    <a href="#">Mapita</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Search</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Header</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="mapa"></div>
-                </section>
-                <aside>
-                    <h2>
-                        Registrate
-                    </h2>
-                    <h:form>
-                        <p:inputText id="nombre" value="#{agregaUsuario.nombre}" placeholder="Nombre"/> <br/>
-                        <p:inputText id="correo" value="#{agregaUsuario.correo}" placeholder="Correo"/> <br/>
-                        <p:password id="constrasenia" value="#{agregaUsuario.contrasenia}" placeholder="Contrasenia"/> <br/>
-                        <p:calendar id="fechanacimiento" value="#{agregaUsuario.fechanacimiento}" placeholder="Fecha de nacimiento"/> <br/>
-                        <p:commandButton action="#{agregaUsuario.agregaUsuario()}" value="Registrame" ajax="false" />
-                    </h:form>
-                </aside>
-            </main>
-            <footer>
-                <h3>
-                    Lorem ipsum dolor sit amet.
-                </h3>
-            </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <h:form>
+                <h:panelGroup>
+                    <center>                 
+                            <p:inputText id="nombre" value="#{agregaUsuario.nombre}" placeholder="Nombre"/> <br/>
+                            <p:inputText id="correo" value="#{agregaUsuario.correo}" placeholder="Correo"/> <br/>
+                            <p:password id="constraseña" value="#{agregaUsuario.contraseña}" placeholder="Contraseña"/> <br/>
+                            <p:calendar id="fecha" value="#{agregaUsuario.fecha}" placeholder="Fecha de nacimiento"/> <br/>
+                            <p:commandButton action="#{agregaUsuario.agregaUsuario()}" value="Registrame" ajax="false" />
+                    </center>
+                </h:panelGroup>
+            </h:form>                
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"></link>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-        </h:body>
-    </f:view>
+        <div class="container text-center">
+            <hr></hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-pills nav-justified">
+                        <li><a href="/">Footer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
 </html>
-

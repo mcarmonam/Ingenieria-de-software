@@ -14,11 +14,11 @@
         <property name="correo" type="string">
             <column name="correo" not-null="true" />
         </property>
-        <property name="contrasenia" type="string">
-            <column name="contrasenia" not-null="true" />
+        <property name="contraseña" type="string">
+            <column name="contraseña" not-null="true" />
         </property>
-        <property name="fechanacimiento" type="date">
-            <column name="fechanacimiento" length="13" />
+        <property name="fecha" type="date">
+            <column name="fecha" length="13" />
         </property>
         <set name="marcadors" table="marcador" inverse="true" lazy="true" fetch="select">
             <key>

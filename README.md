@@ -10,3 +10,7 @@ Daniela Calderón Pérez
 
 **Ayud. Lab.**
 Jonathan Barragán Jiménez
+
+**Alumno**
+Juan Adolfo Alfaro Jimenez
+Equipo 8
