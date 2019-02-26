@@ -1,0 +1,7 @@
+is/lab/mapita/modelo/AbstractDAO.class
+is/lab/mapita/modelo/MarcadorDAO.class
+is/lab/mapita/modelo/Marcador.class
+is/lab/mapita/modelo/UsuarioDAO.class
+is/lab/mapita/modelo/HibernateUtil.class
+is/lab/mapita/controlador/AgregaUsuario.class
+is/lab/mapita/modelo/Usuario.class
